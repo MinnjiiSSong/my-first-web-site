@@ -1,0 +1,54 @@
+ol {
+    border-right: 1px solid crimson;
+    width: 100px;
+    height: 100vh;
+    margin: 0px;
+    padding: 20px;
+
+}
+.saw {
+    color: crimson;
+}
+#active {
+    color: mediumblue;
+}
+h1 {
+    color: crimson;
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 3px solid crimson;
+    margin: 0px;
+    padding: 20px;
+}
+p {
+    text-align: justify;
+}
+span {
+    color: forestgreen;
+    text-decoration: underline forestgreen;
+}
+
+/* div {
+    border: 5px solid red;
+} */
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    border: 3px solid crimson;
+}
+
+@media(max-width: 800px) {
+    #grid {
+        display: block;
+    }
+    #grid ol {
+        border-right: none;
+        border-bottom: 1px solid crimson;
+        width: 100vw;
+        height: auto;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
